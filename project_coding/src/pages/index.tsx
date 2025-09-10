@@ -1,3 +1,5 @@
+import Topo from "@/components/Topo";
+import Timeline from "@/components/Timeline";
 
 const showDiv = () =>{
   return(
@@ -13,8 +15,8 @@ export default function Home() {
  let ativo = true;
 
   return (
-    <div>
-        { ativo? 
+    <div className="content-div">
+        {/* { ativo? 
           showDiv()
          : (
           <p>Mierda</p>
@@ -27,13 +29,21 @@ export default function Home() {
               <p>Texto 12</p>
               <p>Texto 2</p>
             </div>
+            <div className="flex justify-evenly h-20">
+              <p className='txt-4xl'>ola</p>
+              <p>tudo</p>
+              <p>bom</p>
+            </div>
             
             <p>Descricao - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Itaque provident minima suscipit voluptas ipsa laudantium sed, sequi ratione consequatur, 
               qui ullam blanditiis tenetur iure incidunt officia? Numquam aliquid assumenda culpa?
             </p>
           </div>
-        </div>
+        </div> */}
+        {/* <Topo/> */}
+
+        <Timeline />
     </div>
   );
 }
