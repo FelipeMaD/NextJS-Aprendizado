@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useCounterStore } from "./store";
+import Card from "./components/Card";
 
 // UTILIZANDO O ESTADO FORA DO COMPONENTE
 
@@ -44,19 +45,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col align-middle justify-center gap-40">
-        <h1 className="text-center">{resultado}</h1>
+    <div className="h-screen flex flex-col justify-center items-center gap-40">
+        {/* <h1 className="text-center">{resultado}</h1>
         <p className="text-center">Tentando aprender bhaskara com type</p>
         <button className={'focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800'} onClick={handleShowResult}>Alterar Resultado</button>
         
     {/* CRIANDO A MESMA COISA, PORÉM COM ZUSTAND AGORA */}
-      <p className="text-center bg-gray-800 text-white font-bold">Utilizando zustand</p>
+      {/* <p className="text-center bg-gray-800 text-white font-bold">Utilizando zustand</p>
       <h1 className="text-center">{count}</h1>
       <div className="flex flex-row gap-5 justify-center mb-16">
         <button className="rounded-2xl p-2.5 bg-purple-700 text-white cursor-pointer" onClick={incrementAsyncr}>Aumentar</button>
         <button className="rounded-2xl p-2.5 bg-blue-900 text-white cursor-pointer" onClick={decrementAsyncr}>Diminuir</button>
-      </div>
+      </div> */} 
       
+      <Card/>
 
     </div>
   );
